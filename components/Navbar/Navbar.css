@@ -1,0 +1,112 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* or any color you prefer */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 1rem 4rem;
+    box-sizing: border-box; /* Add this line */
+    z-index: 1000;
+  }
+  
+  /* Logo Section */
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #007bff; /* or your preferred hover color */
+  }
+  
+  /* Social Links */
+  .nav-socials {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #007bff; /* or your preferred hover color */
+  }
+  
+  /* Hamburger Icon */
+  .nav-hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-socials {
+      display: none;
+    }
+  
+    .nav-hamburger {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 1rem;
+    }
+  
+    .logo-text {
+      font-size: 1.2rem;
+    }
+  
+    .nav-links a {
+      padding: 0.5rem 0;
+    }
+  }     
