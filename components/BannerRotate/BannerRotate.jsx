@@ -1,9 +1,9 @@
 import React from "react";
-import "./Banner.css";
-const Banner = () => {
+import "./BannerRotate.css";
+const BannerRotate = () => {
   return (
     <div className="wrapper">
-      <div className="banner-container">
+      <div className="banner-container-r">
         <div className="rotating-text-wrapper">
           <div className="rotating-text">
             $NIGGACHU⚡$NIGGACHU⚡$NIGGACHU⚡$NIGGACHU⚡
@@ -51,4 +51,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default BannerRotate;

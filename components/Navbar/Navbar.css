@@ -2,13 +2,21 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff; /* or any color you prefer */
+    align-items: center;/* or any color you prefer */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     padding: 1rem 4rem;
     box-sizing: border-box; /* Add this line */
     z-index: 1000;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29.26px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+    margin-bottom: 200PX;
+    
   }
   
   /* Logo Section */
@@ -27,18 +35,27 @@
   .logo-text {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
+    
   }
   
   /* Navigation Links */
   .nav-links {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
     display: flex;
     gap: 2rem;
   }
   
   .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: 500;
     transition: color 0.3s ease;
   }

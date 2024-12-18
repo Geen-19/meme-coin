@@ -1,29 +1,20 @@
+.app-cover {
+  background: #151515;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.wrapper {
+  position: relative;
+  z-index: 1000;
+}
 /* RotatingBanner.css */
-.banner-container {
-  width: 100%;
-  height: 50px;
-  overflow: hidden;
-  background: black; /* Change background color as needed */
-}
+.pika {
+  font-family: Montserrat;
+font-size: 256px;
+font-weight: 400;
+line-height: 312.25px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
 
-.rotating-text-wrapper {
-  display: flex;
-  animation: rotate 20s linear infinite;
-}
-
-.rotating-text {
-  white-space: nowrap;
-  color: white; /* Change text color as needed */
-  font-size: 24px;
-  padding: 10px;
-  flex-shrink: 0;
-}
-
-@keyframes rotate {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
 }

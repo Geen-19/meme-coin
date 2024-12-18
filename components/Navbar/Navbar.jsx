@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { FaTwitter, FaTelegram, FaDiscord, FaBars, FaTimes } from 'react-icons/fa';
-
+import Pikachu  from "../../assets/Niggachu.png"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -13,8 +13,8 @@ const Navbar = () => {
     <nav className="navbar">
       {/* Logo Section */}
       <div className="nav-logo">
-        <img src="/your-logo.png" alt="Logo" className="logo-img" />
-        <span className="logo-text">Your Brand</span>
+        <img src= {Pikachu} alt="Logo" className="logo-img" />
+      <span className="logo-text">$NIGGACHU</span>
       </div>
 
       {/* Hamburger Icon */}

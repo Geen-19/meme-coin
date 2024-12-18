@@ -1,0 +1,61 @@
+.wrapper {
+  position: relative;
+  z-index: 1000;
+}
+
+/* RotatingBanner.css */
+.banner-container-r {
+  width: 100%;
+  height: 82px;
+  overflow: hidden;
+  background: #9D0000;
+  transform: rotate(10deg) scale(1.2); /* Scale up slightly to cover gaps */
+  margin: -20px -40px; /* Add margins to ensure rotated content doesn't show at edges */
+}
+
+.rotating-text-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 20s linear infinite;
+}
+
+.rotating-text {
+  height: 100%;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Change text color as needed */
+  font-family: Impact;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 51.23px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .rotating-text {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rotating-text {
+    font-size: 24px;
+  }
+}
